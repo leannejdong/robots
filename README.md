@@ -1,1 +1,1 @@
-![Degree Animation](animation.gif)
+![Degree Animation](animation_optimized.gif)
