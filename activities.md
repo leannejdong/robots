@@ -15,7 +15,7 @@ When we scanned the "Obstacle Avoidance" barcode in Week 1, Edison executed a pr
 
 | Feature | Barcode Scanning ("Obstacle Avoidance") | Custom Coding in EdScratch |
 | :--- | :--- | :--- |
-| **How It Works** | Reads a fixed sequence stored in Edison's firmware. | Downloads your step-by-step block code via the EdComm cable. |
+| **How It Works** | Reads a fixed sequence stored in Edison's firmware. | Downloads your step-by-step block code via the USB cable. |
 | **Sensor Setup** | Automatically enables infrared (IR) emitters and receivers. | Requires turning on IR detection explicitly using setup blocks. |
 | **Control & Customization** | None. Edison moves, detects, turns, and continues on a pre-set loop. | High. You decide how far to turn, how fast to drive, or whether to sound an alarm. |
 | **Logic Structure** | Hidden "black box" algorithm. | Explicit loop structure using `forever`, `if...then` blocks, and `obstacle detected` events. |
