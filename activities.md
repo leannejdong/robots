@@ -9,6 +9,12 @@
 
 When we scanned the "Obstacle Avoidance" barcode in Week 1, Edison executed a pre-programmed script stored directly inside its internal firmware. In EdScratch, we write the step-by-step logic ourselves to achieve the same movement.
 
+What is a obstacles robot?
+
+Well, our ediion V3 can tell when there are things in front of it.
+It is a robot uses infrared light to detect objects. You cannot see the light because infrared light is invisible to people's eyes.
+
+Edison uses infrared light to find things in its path if there is something in front of Edison. Edison can turn away and avoid running into it.
 ---
 
 ## Comparison Summary
@@ -32,7 +38,22 @@ When we scanned the "Obstacle Avoidance" barcode in Week 1, Edison executed a pr
 
 ---
 
+
+## What does a IR sensor do?
+
+Bats: They emit high-pitched ultrasonic chirps that bounce off obstacles and prey, listening for the returning echo (echolocation) to calculate distance and location.
+
+Dolphins: They release clicking sounds that travel through the water, bounce off objects or other marine life, and bounce back to their lower jaw to form an acoustic map.
+
+Radar: It sends out radio waves or microwaves into the air, measures the time it takes for those waves to hit an object and bounce back, and determines the object's speed and position.
+
+
+
 ## How do robots see
+
+Our Edison uses something called "Infrared (IR) light". It has an "emitter" (IR LED in the slide) that sends the light out and when it bounces off something the "receiver" (PhotoDiode on the slide) detects that and Edison thinks an obstacle has been detected.
+
+
 
 ![IR Sensor Diagram](robotSee.png)
 
