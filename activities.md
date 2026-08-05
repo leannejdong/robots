@@ -32,6 +32,47 @@ When we scanned the "Obstacle Avoidance" barcode in Week 1, Edison executed a pr
 
 ---
 
+## How do robots see
+
+![IR Sensor Diagram](robotSee.png)
+
+### Edison V3 Hardware Mapping: How Robots "See"
+
+| Conceptual Diagram Component | Edison V3 Physical Component | How It Works on Edison V3 |
+| :--- | :--- | :--- |
+| **IR LED** *(Emitter)* | **Left & Right Infrared LEDs** *(Front outer edges)* | Emits invisible infrared light forward into the environment. Edison pulses these LEDs to search for obstacles. |
+| **Object / Obstacle** | Wall, hand, box, or track barrier | The physical surface directly in front of Edison that bounces the transmitted IR light back toward the sensors. |
+| **PhotoDiode** *(Receiver)* | **Left & Right Light Sensors** *(Front inner corners)* | Detects and measures the strength of the returning reflected IR light. |
+| **IR Sensor** *(Controller)* | **Edison Microcontroller Board** | Reads the sensor input to determine **if** an object is ahead and **which side** (left, right, or straight ahead) it is on. |
+
+---
+
+#### Step-by-Step Sensing Process
+
+1. **Emitting Light:** Edison flashes its **Infrared LEDs** forward.
+2. **Bouncing Off Objects:** Invisible light hits an obstacle surface and reflects back.
+3. **Receiving Light:** The **Light Sensors** (acting as photodiodes) catch the reflected IR signal.
+4. **Processing Signal:** The **Microcontroller** determines the reflection intensity. If it exceeds the threshold, EdScratch triggers the `obstacle detected` block (allowing Edison to stop, turn, or play a sound).
+
+
+
+**"How does a robot 'sees' without actual eyes? It works just like a bat using echolocation, but with invisible light!**
+
+1. **Flash:** Edison fires out an invisible beam of light from its front IR LEDs—like a secret flashlight beam you can't see.
+
+
+2. **Bounce:** When that beam hits an obstacle, it bounces right off.
+
+
+3. **Catch:** Edison's light sensors act as the receivers, catching the light as it bounces back.
+
+
+4. **Think:** Edison's brain measures how strong that reflection is. High reflection? Obstacle close! Low reflection? Clear path ahead!
+
+
+
+**So, when you write your EdScratch code today, you aren't just turning motors—you're telling Edison's brain what to do when it catches that bouncing light!"**
+
 ## Teaching Sequence / Activity Steps
 
 1. **Review Week 1:** Ask students to recall how Edison reacted when scanning the "Obstacle Avoidance" barcode.
