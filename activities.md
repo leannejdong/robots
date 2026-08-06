@@ -41,6 +41,8 @@ Edison uses infrared light to find things in its path if there is something in f
 
 ## What does a IR sensor do?
 
+They are all very different things however they use the same principle: sending a signal, bouncing it off something and listening for the echo
+
 Bats: They emit high-pitched ultrasonic chirps that bounce off obstacles and prey, listening for the returning echo (echolocation) to calculate distance and location.
 
 Dolphins: They release clicking sounds that travel through the water, bounce off objects or other marine life, and bounce back to their lower jaw to form an acoustic map.
@@ -93,6 +95,22 @@ Our Edison uses something called "Infrared (IR) light". It has an "emitter" (IR 
 
 
 **So, when you write your EdScratch code today, you aren't just turning motors—you're telling Edison's brain what to do when it catches that bouncing light!"**
+
+
+** What are the lights and when they are for?
+
+**Infrared (IR) Light & Sensor (Obstacle Detection)**
+
+* **IR Light:** Invisible light emitted forward by the robot's front LEDs.
+* **IR Sensor:** Listens for the emitted IR light to bounce off an object and return (like an invisible radar).
+* **When used:** Actively running during obstacle detection and seeking programs to spot objects in the robot's path.
+
+**Normal (Visible) Light & Sensor (Line Tracking / Status)**
+
+* **Visible Light:** Standard visible light (like the red LED underneath the robot or status lights on top).
+* **Light Sensor:** Reads visible light reflected off the floor surface.
+* **When used:** Used for line-following/surface detection (dark lines absorb light; white paper reflects it) and visual feedback to students.
+
 
 ## Teaching Sequence / Activity Steps
 
